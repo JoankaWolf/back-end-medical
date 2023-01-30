@@ -2,6 +2,7 @@ package com.medical_back.medical.domain.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.medical_back.medical.domain.StatusVisit;
 import com.sun.istack.NotNull;
 import lombok.*;
 
@@ -18,15 +19,16 @@ public class Visit {
 
     @Id
     @GeneratedValue
-    private long id;
+    private Long id;
 
     @NotNull
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
-    @Column(name = "APPOINTMENT_DATE")
+    @Column
     private LocalDate appointmentDate;
 
     @NotNull
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "hh:mm")
+    @Column
     private LocalTime appointmentTime;
 
     @Column

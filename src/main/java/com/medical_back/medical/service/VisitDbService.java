@@ -1,11 +1,8 @@
 package com.medical_back.medical.service;
 
-import com.medical_back.medical.domain.entity.Doctor;
-import com.medical_back.medical.domain.entity.Patient;
 import com.medical_back.medical.domain.entity.Visit;
 import com.medical_back.medical.exception.ObjectsInClassNotFoundException;
 import com.medical_back.medical.repository.VisitRepository;
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

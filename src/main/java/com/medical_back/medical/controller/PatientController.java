@@ -41,14 +41,14 @@ public class PatientController {
     }
 
     @PutMapping
-    public ResponseEntity<PatientDto> updateDoctor(@RequestBody PatientDto patientDto) throws  ObjectsInClassNotFoundException{
+    public ResponseEntity<PatientDto> updatePatient(@RequestBody PatientDto patientDto) throws  ObjectsInClassNotFoundException{
         Patient patient = patientMapper.mapToPatient(patientDto);
         Patient patientSaved = patientDbService.savePatient(patient);
         return ResponseEntity.ok(patientMapper.mapToPatientDto(patientSaved));
     }
 
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Void> createOrder(@RequestBody PatientDto patientDto) throws ObjectsInClassNotFoundException{
+    public ResponseEntity<Void> createPatient(@RequestBody PatientDto patientDto) throws ObjectsInClassNotFoundException{
         Patient patient = patientMapper.mapToPatient(patientDto);
         patientDbService.savePatient(patient);
         return ResponseEntity.ok().build();

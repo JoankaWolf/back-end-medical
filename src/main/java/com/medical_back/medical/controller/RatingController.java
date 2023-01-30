@@ -1,7 +1,6 @@
 package com.medical_back.medical.controller;
 
 import com.medical_back.medical.domain.dto.RatingDto;
-import com.medical_back.medical.domain.entity.Patient;
 import com.medical_back.medical.domain.entity.Rating;
 import com.medical_back.medical.exception.ObjectsInClassNotFoundException;
 import com.medical_back.medical.mapper.RatingMapper;

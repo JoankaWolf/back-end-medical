@@ -1,4 +1,4 @@
-package com.medical_back.medical.config;
+package com.medical_back.medical.controller.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

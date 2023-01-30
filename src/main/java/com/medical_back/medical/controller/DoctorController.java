@@ -2,7 +2,6 @@ package com.medical_back.medical.controller;
 
 import com.medical_back.medical.domain.dto.DoctorDto;
 import com.medical_back.medical.domain.entity.Doctor;
-import com.medical_back.medical.domain.entity.Visit;
 import com.medical_back.medical.exception.ObjectsInClassNotFoundException;
 import com.medical_back.medical.mapper.DoctorMapper;
 import com.medical_back.medical.service.DoctorDbService;

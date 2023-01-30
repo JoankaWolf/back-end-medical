@@ -1,4 +1,4 @@
-package com.medical_back.medical.config.ICD;
+package com.medical_back.medical.externalServiceICD.configICD;
 
 import lombok.Getter;
 import org.springframework.beans.factory.annotation.Value;

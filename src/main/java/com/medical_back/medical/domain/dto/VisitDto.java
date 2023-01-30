@@ -1,6 +1,6 @@
 package com.medical_back.medical.domain.dto;
 
-import com.medical_back.medical.domain.entity.StatusVisit;
+import com.medical_back.medical.domain.StatusVisit;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 

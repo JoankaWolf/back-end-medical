@@ -3,7 +3,7 @@ package com.medical_back.medical.mapper;
 import com.medical_back.medical.domain.dto.DoctorDto;
 import com.medical_back.medical.domain.dto.DoctorDtoAll;
 import com.medical_back.medical.domain.entity.Doctor;
-import com.medical_back.medical.service.VisitDbService;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +14,6 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class DoctorMapper {
 
-    private final VisitDbService visitDbService;
     private final VisitMapper visitMapper;
 
     private final RatingMapper ratingMapper;

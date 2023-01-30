@@ -32,7 +32,7 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 //	annotationProcessor 'org.projectlombok:lombok:1.18.24'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-
+	implementation 'com.google.code.gson:gson'
 
 //	testCompileOnly 'org.projectlombok:lombok:1.18.24'
 //	testAnnotationProcessor 'org.projectlombok:lombok:1.18.24'

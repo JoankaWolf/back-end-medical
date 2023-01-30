@@ -1,4 +1,4 @@
-package com.medical_back.medical.domain.entity;
+package com.medical_back.medical.domain;
 
 
 public enum StatusVisit {

@@ -1,4 +1,4 @@
-package com.medical_back.medical.domain.BMIdto;
+package com.medical_back.medical.externalServiceBMI.dtoBMI;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

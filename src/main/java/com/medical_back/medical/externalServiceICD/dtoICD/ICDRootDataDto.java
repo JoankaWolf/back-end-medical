@@ -1,14 +1,14 @@
-package com.medical_back.medical.domain.ICDdto;
+package com.medical_back.medical.externalServiceICD.dtoICD;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 
-import java.util.ArrayList;
+import java.util.List;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Data
 public class ICDRootDataDto {
-    public int current_page;
 
-    public ArrayList<Datum> data;
+    private final int current_page;
+    private final List<Datum> data;
 }

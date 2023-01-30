@@ -1,4 +1,4 @@
-package com.medical_back.medical.config.BMI;
+package com.medical_back.medical.externalServiceBMI.configBMI;
 
 import lombok.Getter;
 import org.springframework.beans.factory.annotation.Value;

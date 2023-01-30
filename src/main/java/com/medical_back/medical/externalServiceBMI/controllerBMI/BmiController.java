@@ -1,6 +1,6 @@
-package com.medical_back.medical.controller.BMI;
-import com.medical_back.medical.service.BMIservice.BmiService;
-import com.medical_back.medical.domain.BMIdto.BmiResponse;
+package com.medical_back.medical.externalServiceBMI.controllerBMI;
+import com.medical_back.medical.externalServiceBMI.serviceBMI.BmiService;
+import com.medical_back.medical.externalServiceBMI.dtoBMI.BmiResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

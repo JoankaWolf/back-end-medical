@@ -17,13 +17,13 @@ public class Rating {
 
     @Id
     @GeneratedValue
-    private long id;
+    private Long id;
 
     @Column
     private double value;
 
     @ManyToOne
-    @JoinColumn(name = "visit_doctor_id", referencedColumnName = "Id")
+    @JoinColumn(name = "visit_doctor_id", referencedColumnName = "id")
     @JsonBackReference
     private Doctor doctor;
 
