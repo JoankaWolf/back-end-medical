@@ -65,11 +65,11 @@ public class DoctorMapperTest {
         List<Doctor> doctors = List.of(doctor);
 
         //When
-        List<DoctorDto> resultList = mapper.mapToDoctorDtoList(doctors);
+        List<DoctorDto> results = mapper.mapToDoctorDtoList(doctors);
 
         //Given
-        assertEquals(1, resultList.size());
-        assertEquals("Last", resultList.get(0).getLastName());
+        assertEquals(1, results.size());
+        assertEquals("Last", results.get(0).getLastName());
     }
 
 }
