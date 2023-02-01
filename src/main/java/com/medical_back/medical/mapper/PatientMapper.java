@@ -2,13 +2,10 @@ package com.medical_back.medical.mapper;
 
 import com.medical_back.medical.domain.dto.PatientDto;
 import com.medical_back.medical.domain.entity.Patient;
-import com.medical_back.medical.repository.PatientRepository;
-import com.medical_back.medical.service.PatientDbService;
 import com.medical_back.medical.service.VisitDbService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 

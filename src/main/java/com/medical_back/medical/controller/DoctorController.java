@@ -53,10 +53,4 @@ public class DoctorController {
         return ResponseEntity.ok().build();
     }
 
-//    @GetMapping(value = "/listId")
-//    public ResponseEntity<List<Long>> getAllDoctorsId() {
-//        List<Long> doctorsID = doctorDbService.allDoctorsId();
-//        return ResponseEntity.ok(doctorsID);
-//    }
-
 }

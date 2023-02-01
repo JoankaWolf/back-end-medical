@@ -1,8 +1,6 @@
 package com.medical_back.medical.service;
 
 import com.medical_back.medical.domain.StatusVisit;
-import com.medical_back.medical.domain.entity.Doctor;
-import com.medical_back.medical.domain.entity.Patient;
 import com.medical_back.medical.domain.entity.Visit;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -13,7 +11,7 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 @SpringBootTest
 class VisitDbServiceTest {
 

@@ -22,7 +22,6 @@ public class PatientController {
     private final PatientDbService patientDbService;
     private final PatientMapper patientMapper;
 
-
     @GetMapping(value = "{patientId}")
     public ResponseEntity<PatientDto> getPatient(@PathVariable long patientId) throws ObjectsInClassNotFoundException {
         return ResponseEntity.ok(patientMapper.mapToPatientDto(patientDbService.getPatient(patientId)));

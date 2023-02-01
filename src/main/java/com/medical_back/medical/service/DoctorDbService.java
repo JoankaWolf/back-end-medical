@@ -7,7 +7,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -29,8 +28,4 @@ public class DoctorDbService {
     public void deleteDoctor(final Long doctorId) {
         doctorRepository.deleteById(doctorId);
     }
-
-//    public List<Long> allDoctorsId(){
-//        return doctorRepository.findAll().stream().map(Doctor::getId).collect(Collectors.toList());
-//    }
 }

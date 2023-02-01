@@ -52,5 +52,4 @@ public class VisitController {
         visitDbService.saveVisit(visit);
         return ResponseEntity.ok().build();
     }
-
 }
