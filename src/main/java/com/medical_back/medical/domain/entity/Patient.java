@@ -32,7 +32,7 @@ public class Patient {
     private String email;
 
     @Column
-    private long peselNumber;
+    private Long peselNumber;
 
     @OneToMany(mappedBy = "patient")
     @JsonManagedReference

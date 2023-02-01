@@ -22,12 +22,12 @@ public class Visit {
     private Long id;
 
     @NotNull
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
+  //  @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @Column
     private LocalDate appointmentDate;
 
     @NotNull
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "hh:mm")
+ //   @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "hh:mm")
     @Column
     private LocalTime appointmentTime;
 
@@ -44,12 +44,12 @@ public class Visit {
     StatusVisit statusVisit;
 
     @ManyToOne
-    @JoinColumn(name = "visit_doctor_id", referencedColumnName = "Id")
+    @JoinColumn
     @JsonBackReference
     private Doctor doctor;
 
     @ManyToOne
-    @JoinColumn(name = "visit_patient_id", referencedColumnName = "Id")
+    @JoinColumn
     @JsonBackReference
     private Patient patient;
 

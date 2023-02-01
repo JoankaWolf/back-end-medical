@@ -27,7 +27,8 @@ public class VisitController {
     }
 
     @GetMapping
-    public ResponseEntity<List<VisitDto>> getAllVisit(List<Visit> visits) {
+    public ResponseEntity<List<VisitDto>> getAllVisit() {
+        List<Visit> visits = visitDbService.allVisits();
         return ResponseEntity.ok(visitMapper.mapToVisitDtoList(visits));
     }
 
